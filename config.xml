@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<widget xmlns	= "http://www.w3.org/ns/widgets"
+	version 	= "1.0">
+	<name>Diocesi Nocera-Sarno</name>
+        
+	<description>
+        Diocesi di Nocera Inferiore - Sarno 
+	</description>
+        
+  <icon src="img/logo.png" width="100" height="100" />
+  
+  <feature name="http://api.phonegap.com/1.0/network" />
+</widget>
