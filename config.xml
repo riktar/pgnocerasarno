@@ -6,15 +6,9 @@ and open the template in the editor.
 -->
 
 
-<widget xmlns	= "http://www.w3.org/ns/widgets"
-	version 	= "1.0">
-	<name>PG Nocera Sarno</name>
-        
-	<description>
-        Diocesi di Nocera Inferiore - Sarno 
-	</description>
-        
-  <icon src="img/logo.png" width="100" height="100" />
-  
-  <feature name="http://api.phonegap.com/1.0/network" />
+<widget id="com.monkeysign.pgnocerasarno" xmlns= "http://www.w3.org/ns/widgets" version = "1.0">
+    <name>PG Nocera Sarno</name>
+    <description>Diocesi di Nocera Inferiore - Sarno</description>
+    <icon src="img/logo.png" width="100" height="100" />
+    <feature name="http://api.phonegap.com/1.0/network" />
 </widget>
