@@ -24,9 +24,9 @@ and open the template in the editor.
     
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="org.apache.cordova.file" version="1.3.3" />
+    <gap:plugin name="org.apache.cordova.camera" version="0.3.6" />
     
-    <plugin name="File" value="org.apache.cordova.FileUtils" />
-    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer" />
     
     <preference name="orientation" value="portrait" />
     
