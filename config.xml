@@ -22,6 +22,7 @@ and open the template in the editor.
     
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <preference name="orientation" value="portrait" />
     
     <access origin="*" />
     
