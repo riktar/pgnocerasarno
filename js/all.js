@@ -90,6 +90,27 @@ $(function () {
         });
         return false;
     });
+    
+    $('body').on('click','#submit-contatti', function () {
+        $.ajax({
+            type: 'POST',
+            url: POSTURL + 'page-contatti/',
+            data: {
+                nome: $('#nome-contatti').val(),
+                email: $('#email-contatti').val(),
+                messaggio: $('#messaggio-contatti').val()
+            },
+            dataType: 'json',
+            success: function (data) {
+                if (data.result) {
+                    alert("Messaggio inviato con successo! Sarai ricontattato al pi� presto!");
+                } else {
+                    alert(data.error);
+                }
+            }
+        });
+        return false;
+    });
 
 });
 
