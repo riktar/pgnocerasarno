@@ -1,73 +1,56 @@
-/****************************
-*          DEFAULT          *
-****************************/
-html, body { height:100%!important; width:100%; position: relative;}
-body{background: #efefef;}
+/*---------------------------------
+                DEFAULT
+---------------------------------*/
+html, body { height:100vh!important; width:100vw; position: relative;}
+body {background: #efefef;}
 
-/****************************
-*           SKELE           *
-****************************/
-#section-main{width:100%;height:100%;position:fixed;left:-100%;top:0;padding-top:3em;background: url('../img/bg/bg4.jpg');background-position: top center;background-repeat: no-repeat;transition: all .4s cubic-bezier(1,.1,.4,.9);z-index:10000;overflow:hidden;
-              transform: translate3d(0,0,0);
-              -webkit-transform: translate3d(0,0,0);
-              background-size: cover;
-}
-#section-main.visibile{left:0;}
+/*---------------------------------
+                MENU
+---------------------------------*/
+#menu {display:table; z-index: 10;overflow:hidden;width:100vw; height:100vh;position:absolute;top:0; left:-100%;background: url(../img/bgmenu.jpg); background-size: cover; background-position: center center; background-repeat: no-repeat; transition: all .3s cubic-bezier(.42,.06,.85,.11)}
+#menu.visibile{left:0%;}
+#menu > .table-cell {display:table-cell; position:relative; width: 100%; height:100%; vertical-align: middle; text-align: center;}
+#menu > .table-cell > .menu-container {padding:0 15px;}
+#menu > .table-cell > .menu-container > .row:first-of-type{margin-bottom: 30px;}
+#menu > .table-cell > .menu-container > .row .btn-rounded {text-transform: uppercase;width:90px;height:90px; padding:1.4em 1em;color:#00adef; border-radius: 100%;background: rgba(255,255,255,.95); border:none; box-shadow: 3px 3px 3px rgba(0,0,0,.2)}
+#menu > .table-cell > .menu-container > .row .btn-rounded > h5{ color:#00adef; font-size: .85em; font-weight: 700; text-align: center; margin:0;margin-top:10px;}
+#menu > .table-cell > .menu-container > .row .btn-rounded > .fa{font-size: 2em;}
 
-#main-menu{position:fixed;top:-100%;left:0;width:100%;z-index:999;transition: all .4s cubic-bezier(1,.1,.4,.9);
-           transform: translate3d(0,0,0);
-           -webkit-transform: translate3d(0,0,0);
-}
-#main-menu.visibile{top:0%}
+/*---------------------------------
+            TOP MENU
+---------------------------------*/
+#top-menu{height: 50px;position:fixed;top:0;left:0;width:100%;z-index:2; background: #00adef; border:none;}
+#top-menu .navbar-header{height: 50px;}
+#top-menu .navbar-brand{color:#eee;border:none!important;box-shadow: none!important;background-color: transparent!important;border-radius: 0!important;}
+#top-menu .navbar-brand.focus{background: #fff!important; color:#2196f3!important}
+#top-menu .menu-center{display: inline-block;margin:0;}
+
+/*---------------------------------
+        CONTAINER ALL SECTION
+---------------------------------*/
+#container-all-section{padding-top:50px;}
+
+/*---------------------------------
+              ARTICLE
+---------------------------------*/
+.article{position:relative;}
+.article > .high{position: absolute; top: 45px; left: 5%; background: #00adef; color: #fff; padding: 6px 9px; font-size: .7em; text-transform: uppercase; font-weight: 700;}
+.article > .img{height: 90px;overflow: hidden;background-size: 100% auto; background-position: center center;}
+.article > .text{width:90%; padding: 10px; position: relative; background: #efefef;margin:-15px auto 0 auto}
+.article > .text > .title{margin: 0; color: #00adef; font-size: 1.3em; font-weight: 700;}
+.article > .text > .data{color:#999;}
+
+.single-title{ color: #00adef; font-size: 1.6em; font-weight: 700;}
+.img{height: 90px;overflow: hidden;background-size: cover; background-position: center center;}
+
+
+
+/*---------------------------------
+            MEDIA QUERY
+---------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 320px) {
-    #main-menu .fa{font-size:.8em;}
+    #menu > .table-cell > .menu-container > .row .btn-rounded{color:#fff;width:80px; height: 80px;padding:1em;color:#00adef; border-radius: 100%;background: rgba(255,255,255,.8)}
+    #menu > .table-cell > .menu-container > .row .btn-rounded > h5{ font-size: .75em;}
+    #menu > .table-cell > .menu-container > .row .btn-rounded > .fa{font-size: 1.5em;}
 }
 
-#single-view{background: #efefef; overflow: scroll; height:100%; padding-top:4.9em; z-index:998;position:fixed;right:-100%;width:100%;top:0;transition: all .4s cubic-bezier(1,.1,.4,.9);
-             transform: translate3d(0,0,0);
-             -webkit-transform: translate3d(0,0,0);
-}
-#single-view.visibile{right:0}
-
-/****************************
-*            HOME           *
-****************************/
-#home-page > div{margin-bottom:1.5em;}
-.title{font-weight: 300;}
-.home-titolo{margin: 1em auto 1em auto; color:#eec445;}
-.home-titolo small{color:#f6f6f6;}
-#home-page .btn-rounded{color:#fff;width:100%;padding:1.4em 1em;color:#00adef; border-radius: 100%;background: rgba(255,255,255,.8)}
-#home-page .btn-rounded.btn-primary,#home-page .btn-rounded.btn-primary h5 {color:#00adef;}
-#home-page .btn-rounded {}
-#home-page .btn-rounded h5{ color:#00adef; font-size: .85em; font-weight: 700; text-align: center; margin:0;margin-top:10px;}
-#home-page .btn-rounded .fa{font-size: 2em;}
-
-@media screen and (min-width: 0px) and (max-width: 320px) {
-    #home-page .btn-rounded{color:#fff;width:100%;padding:1em;color:#00adef; border-radius: 100%;background: rgba(255,255,255,.8)}
-}
-
-/****************************
-*          TOP MENU         *
-****************************/
-.navbar-brand{border:none!important;box-shadow: none!important;background-color: transparent!important;border-radius: 0!important;}
-.navbar-brand.focus{background: #fff!important; color:#2196f3!important}
-
-/****************************
-*           CONTENT         *
-****************************/
-.sectiontoshow{min-height: 100%; position: relative; width: 100%; background:#efefef; }
-#content-page{}
-#content-page .sectiontoshow{padding-top:7em;}
-#content-page .titolo-sezione h3{margin:0; font-weight: 300}
-#content-page .item-list .immgh{margin-bottom:2em;margin-top:2em;}
-#content-page .single-go-element{color:#444;}
-#home-button{margin-right:.3em; border-right:1px solid #fff;}
-
-#single-gallery{padding-top:64px;width:100%; height: 100%;position:fixed; top:0; left: 100%;overflow: hidden;z-index: 10;transform: translate3d(0,0,0);
-              -webkit-transform: translate3d(0,0,0);}
-#single-gallery{height: 100%; width:100%;}
-#single-gallery div{height:100%;width:100%;position: relative; background-size: cover; background-position: top center;background-repeat: no-repeat}
-#single-gallery.visibile{left:0;transform: translate3d(0,0,0);
-              -webkit-transform: translate3d(0,0,0);}
-
-#loadingSection{padding-top:64px;width:100%; height: 100%;position:absolute; top:0; left: 0;overflow: hidden;z-index: -1}
