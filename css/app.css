@@ -39,6 +39,7 @@ body {background: #efefef;}
 .article > .text{width:90%; padding: 10px; position: relative; background: #efefef;margin:-15px auto 0 auto}
 .article > .text > .title{margin: 0; color: #00adef; font-size: 1.3em; font-weight: 700;}
 .article > .text > .data{color:#999;}
+.img{height: 150px;overflow: hidden;background-size: 100% auto; background-position: center center;}
 
 .single-title{ color: #00adef; font-size: 1.6em; font-weight: 700;}
 .img{height: 90px;overflow: hidden;background-size: cover; background-position: center center;}
