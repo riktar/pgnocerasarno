@@ -111,9 +111,63 @@ $(function () {
         });
         return false;
     });
+    
+    $('body').on('click','.addItems',function(){
+        renderSection($(this).data('section'), $(this).data('start'));
+    });
+    
 
 });
 
 function removeMenu() {
     $('#menu').toggleClass('visibile');
 }
+
+function renderSection(cat, start) {
+        $.ajax({
+            method: "GET",
+            url: POSTURL + "get-" + cat + "/" + start,
+            dataType: "json",
+            crossDomain: true,
+            cache: false,
+            success: function (data) {
+                var htmlToWrite = '';
+                var singleToOpen = 'single-go-element';
+                var idToSend;
+                for (var i = 0; i <= (data.list.length - 1); i++) {
+                    var item = data.list[i];
+                    var imagePath = '';
+                    if (item.Immagine) {
+                        imagePath = MyHost + 'news/' + item.Id + '/images/original/' + item.Immagine;
+                        idToSend = item.Id;
+                    } else {
+                        imagePath = 'img/no-image.jpg';
+                        idToSend = item.Id;
+                    }
+                    htmlToWrite += '\
+                            <a data-request=\'{"rule": "single", "cat": "' + cat + '", "id":' + idToSend + ', "imgPath":"' + imagePath + '"}\'>\n\
+                            <div class="article">\n\
+                                    <div class="high">';
+                    if (item.Descrizione !== undefined) {
+                        htmlToWrite += item.Descrizione;
+                    }
+                    htmlToWrite += '</div>\n\
+                                    <div class="img" style="background-image: url(\'' + imagePath + '\')"></div>\n\
+                                    <div class="text">\n\
+                                    <h2 class="title">' + item.Titolo + '</h2>';
+                    if (item.Data !== undefined) {
+                        htmlToWrite += '<p class="data">' + item.Data + '</p>';
+                    }
+                    htmlToWrite += '</div></div></a>';
+                }
+
+                if (start === 0) {
+                    $('#content-lista').html(htmlToWrite);
+                    $('#pager').htm('<div class="container"><div class="row"><div class="col-xs-12 text-center"><a class="addItems btn btn-primary" data-section="' + cat + '" data-start="' + (parseInt(start) + 5) + '">Visualizza Altri Elementi</a></div></div></div>');
+                } else {
+                    $('#content-lista').append(htmlToWrite);
+                    $('#pager').html('<div class="container"><div class="row"><div class="col-xs-12 text-center"><a class="addItems btn btn-primary" data-section="' + cat + '" data-start="' + (parseInt(start) + 5) + '">Visualizza Altri Elementi</a></div></div></div>');
+                }
+            }
+        });
+    }
