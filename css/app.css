@@ -53,6 +53,6 @@ body {background: #efefef;}
     #menu > .table-cell > .menu-container > .row .btn-rounded{color:#fff;width:80px; height: 80px;padding:1em;color:#00adef; border-radius: 100%;background: rgba(255,255,255,.8)}
     #menu > .table-cell > .menu-container > .row .btn-rounded > h5{ font-size: .75em;}
     #menu > .table-cell > .menu-container > .row .btn-rounded > .fa{font-size: 1.5em;}
-    #top-menu .navbar-brand{padding-left:3px; padding-right: 3px;}
+    #top-menu .navbar-brand{padding-left:8px; padding-right: 8px;}
 }
 
