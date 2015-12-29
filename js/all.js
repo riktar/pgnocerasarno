@@ -163,7 +163,7 @@ function renderSection(cat, start) {
 
                 if (start === 0) {
                     $('#content-lista').html(htmlToWrite);
-                    $('#pager').htm('<div class="container"><div class="row"><div class="col-xs-12 text-center"><a class="addItems btn btn-primary" data-section="' + cat + '" data-start="' + (parseInt(start) + 5) + '">Visualizza Altri Elementi</a></div></div></div>');
+                    $('#pager').html('<div class="container"><div class="row"><div class="col-xs-12 text-center"><a class="addItems btn btn-primary" data-section="' + cat + '" data-start="' + (parseInt(start) + 5) + '">Visualizza Altri Elementi</a></div></div></div>');
                 } else {
                     $('#content-lista').append(htmlToWrite);
                     $('#pager').html('<div class="container"><div class="row"><div class="col-xs-12 text-center"><a class="addItems btn btn-primary" data-section="' + cat + '" data-start="' + (parseInt(start) + 5) + '">Visualizza Altri Elementi</a></div></div></div>');
