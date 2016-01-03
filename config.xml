@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 
 <widget 
-    id="com.monkeysign.pgnocerasarno" 
+    id="com.monkeysign.pgnocerasarnodue" 
     xmlns= "http://www.w3.org/ns/widgets" 
     xmlns:gap   = "http://phonegap.com/ns/1.0" 
     version= "1.0">
