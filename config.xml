@@ -28,8 +28,29 @@ and open the template in the editor.
     <gap:plugin name="org.apache.cordova.file-transfer" version="0.5.0" />
     <gap:plugin name="org.apache.cordova.camera" version="0.3.6" />
     <gap:plugin name="org.apache.cordova.media" spec="0.2.16" source="pgb" />
-
     
+    <platform name="ios">
+        <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="img/logo.png" width="180" height="180" />
+        <!-- iOS 7.0+ -->
+        <!-- iPhone / iPod Touch  -->
+        <icon src="img/logo.png" width="60" height="60" />
+        <!-- iPad -->
+        <icon src="img/logo.png" width="76" height="76" />
+        <!-- iOS 6.1 -->
+        <!-- Spotlight Icon -->
+        <icon src="img/logo.png" width="40" height="40" />
+        <!-- iPhone / iPod Touch -->
+        <icon src="img/logo.png" width="57" height="57" />
+        <!-- iPad -->
+        <icon src="img/logo.png" width="72" height="72" />
+        <!-- iPhone Spotlight and Settings Icon -->
+        <icon src="img/logo.png" width="29" height="29" />
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon src="img/logo.png" width="50" height="50" />
+    </platform>
+
     
     <preference name="orientation" value="portrait" />
     
