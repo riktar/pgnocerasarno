@@ -33,16 +33,22 @@ and open the template in the editor.
         <!-- iOS 8.0+ -->
         <!-- iPhone 6 Plus  -->
         <icon src="img/logo.png" width="180" height="180" />
+        <!-- iPhone 6 Plus  -->
+        <icon src="img/152x152.png" width="152" height="152" />
+        <!-- iPhone 6 Plus  -->
+        <icon src="img/120x120.png" width="120" height="120" />
         <!-- iOS 7.0+ -->
         <!-- iPhone / iPod Touch  -->
         <icon src="img/logo.png" width="60" height="60" />
         <!-- iPad -->
-        <icon src="img/logo.png" width="76" height="76" />
+        <icon src="img/76x76.png" width="76" height="76" />
+        <!-- iPad -->
+        <icon src="img/72x72.png" width="72" height="72" />
         <!-- iOS 6.1 -->
         <!-- Spotlight Icon -->
         <icon src="img/logo.png" width="40" height="40" />
         <!-- iPhone / iPod Touch -->
-        <icon src="img/logo.png" width="57" height="57" />
+        <icon src="img/57x57.png" width="57" height="57" />
         <!-- iPad -->
         <icon src="img/logo.png" width="72" height="72" />
         <!-- iPhone Spotlight and Settings Icon -->
