@@ -2,7 +2,7 @@
                 DEFAULT
 ---------------------------------*/
 html, body { height:100vh!important; width:100vw; height:100%!important; width:100%!important; position: relative;}
-body {background: #efefef;padding-bottom:10px;}
+body {background: #efefef;padding-top:20px;}
 
 /*---------------------------------
                 MENU
@@ -22,7 +22,7 @@ body {background: #efefef;padding-bottom:10px;}
 /*---------------------------------
             TOP MENU
 ---------------------------------*/
-#top-menu{height: 50px;position:fixed;top:0;left:0;width:100%;z-index:2; background: #00adef; border:none;}
+#top-menu{height: 70px;position:fixed;top:0;left:0;width:100%;z-index:2; background: #00adef; border:none; padding-top:20px}
 #top-menu .navbar-header{height: 50px;}
 #top-menu .navbar-brand{color:#eee;border:none!important;box-shadow: none!important;background-color: transparent!important;border-radius: 0!important;}
 #top-menu .navbar-brand.focus{background: #fff!important; color:#2196f3!important}
