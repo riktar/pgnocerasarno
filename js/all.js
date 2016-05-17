@@ -37,11 +37,8 @@ $(function () {
     router.parseRule("<a data-request='{\"rule\": \"home\"}'>", true);
 
     $('body').on('click touchstart', '*[data-request]', function () {
-        alert('pippob1');
         removeMenu();
-        alert('pippob2');
         router.parseRule(this, true);
-        alert('pippob3');
         return false;
     });
 
