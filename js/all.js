@@ -37,8 +37,11 @@ $(function () {
     router.parseRule("<a data-request='{\"rule\": \"home\"}'>", true);
 
     $('body').on('click', '*[data-request]', function () {
+        alert('pippoa1');
         removeMenu();
+        alert('pippoa2');
         router.parseRule(this, true);
+        alert('pippoa3');
         return false;
     });
 
