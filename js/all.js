@@ -46,13 +46,13 @@ $(function () {
     });
 
 
-    $('body').on('click', '.cambiaMese', function () {
+    $('body').on('click touchstart', '.cambiaMese', function () {
 
         router.parseRule("<a data-request='{\"rule\": \"agenda\", \"cat\": \"agenda\", \"data\":" + $(this).data('mod') + ", \"order\":\"DESC\"}'>", true);
 
         //renderSectionAgenda('agenda',$(this).data('mod'), "DESC");
     });
-    $('body').on('click', '.ordinamento', function () {
+    $('body').on('click touchstart', '.ordinamento', function () {
         router.parseRule("<a data-request='{\"rule\": \"agenda\", \"cat\": \"agenda\", \"data\":" + $(this).data('mod') + ", \"order\":\"" + $(this).data('order') + "\"}'>", true);
         //renderSectionAgenda('agenda',$(this).data('mod'), $(this).data('order'));
     });
@@ -72,7 +72,7 @@ $(function () {
     });
     
     //FORM COMMENTO
-    $('body').on('click','.btn-comment-submit', function () {
+    $('body').on('click touchstart','.btn-comment-submit', function () {
         $.ajax({
             type: 'POST',
             url: POSTURL + 'insert-commento-news/',
@@ -94,7 +94,7 @@ $(function () {
         return false;
     });
     
-    $('body').on('click','#submit-contatti', function () {
+    $('body').on('click touchstart','#submit-contatti', function () {
         $.ajax({
             type: 'POST',
             url: POSTURL + 'page-contatti/',
@@ -115,7 +115,7 @@ $(function () {
         return false;
     });
     
-    $('body').on('click','.addItems',function(){
+    $('body').on('click touchstart','.addItems',function(){
         renderSection($(this).data('section'), $(this).data('start'));
     });
     
