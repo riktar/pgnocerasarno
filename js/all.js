@@ -152,8 +152,8 @@ function renderSection(cat, start) {
                     }
                     htmlToWrite += '</div>\n\
                                     <div class="img" style="background-image: url(\'' + imagePath + '\')"></div>\n\
-                                    <div data-request=\'{"rule": "single", "cat": "' + cat + '", "id":' + idToSend + ', "imgPath":"' + imagePath + '"}\' class="text">\n\
-                                    <h2 class="title">' + item.Titolo + '</h2>';
+                                    <div class="text">\n\
+                                    <h2 data-request=\'{"rule": "single", "cat": "' + cat + '", "id":' + idToSend + ', "imgPath":"' + imagePath + '"}\' class="title">' + item.Titolo + '</h2>';
                     if (item.Data !== undefined) {
                         htmlToWrite += '<p class="data">' + item.Data + '</p>';
                     }
