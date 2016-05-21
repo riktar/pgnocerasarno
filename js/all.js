@@ -36,8 +36,7 @@ document.addEventListener("deviceready", function () {
 $(function () {
     router.parseRule("<a data-request='{\"rule\": \"home\"}'>", true);
 
-    $('body').on('click', '*[data-request]', function (e) {
-        e.preventDefault();
+    $('body').on('click', '*[data-request]', function() {
         removeMenu();
         router.parseRule(this, true);
     });
