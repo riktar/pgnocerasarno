@@ -36,9 +36,10 @@ document.addEventListener("deviceready", function () {
 $(function () {
     router.parseRule("<a data-request='{\"rule\": \"home\"}'>", true);
 
-    $('body').on('click', '*[data-request]', function() {
+    $('body').on('click touchstart', '*[data-request]', function() {
         removeMenu();
         router.parseRule(this, true);
+        return false;
     });
 
 
@@ -144,7 +145,6 @@ function renderSection(cat, start) {
                         idToSend = item.Id;
                     }
                     htmlToWrite += '\
-                            <a data-request=\'{"rule": "single", "cat": "' + cat + '", "id":' + idToSend + ', "imgPath":"' + imagePath + '"}\'>\n\
                             <div class="article">\n\
                                     <div class="high">';
                     if (item.Descrizione !== undefined) {
@@ -153,11 +153,11 @@ function renderSection(cat, start) {
                     htmlToWrite += '</div>\n\
                                     <div class="img" style="background-image: url(\'' + imagePath + '\')"></div>\n\
                                     <div class="text">\n\
-                                    <h2 class="title">' + item.Titolo + '</h2>';
+                                    <h2 data-request=\'{"rule": "single", "cat": "' + cat + '", "id":' + idToSend + ', "imgPath":"' + imagePath + '"}\'  class="title">' + item.Titolo + '</h2>';
                     if (item.Data !== undefined) {
                         htmlToWrite += '<p class="data">' + item.Data + '</p>';
                     }
-                    htmlToWrite += '</div></div></a>';
+                    htmlToWrite += '</div></div>';
                 }
 
                 if (start === 0) {
