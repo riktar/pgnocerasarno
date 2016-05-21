@@ -36,7 +36,7 @@ document.addEventListener("deviceready", function () {
 $(function () {
     router.parseRule("<a data-request='{\"rule\": \"home\"}'>", true);
 
-    $('body').on('click touchstart', '*[data-request]', function () {
+    $('body').on('click touchend', '*[data-request]', function () {
         removeMenu();
         router.parseRule(this, true);
         return false;
