@@ -15,17 +15,17 @@ body {background: #efefef;padding-top:20px;}
 #menu > .table-cell {display:table-cell; position:relative; width: 100%; height:100%; vertical-align: middle; text-align: center;}
 #menu > .table-cell > .menu-container {padding:0 15px;}
 #menu > .table-cell > .menu-container > .row:first-of-type{margin-bottom: 30px;}
-#menu > .table-cell > .menu-container > .row .btn-rounded {text-transform: uppercase;width:90px;height:90px; padding:1.4em 1em;color:#00adef; border-radius: 100%;background: rgba(255,255,255,.95); border:none; box-shadow: 3px 3px 3px rgba(0,0,0,.2)}
-#menu > .table-cell > .menu-container > .row .btn-rounded > h5{ color:#00adef; font-size: .85em; font-weight: 700; text-align: center; margin:0;margin-top:10px;}
+#menu > .table-cell > .menu-container > .row .btn-rounded {text-transform: uppercase;width:90px;height:90px; padding:1.4em 1em;color:#ba1725; border-radius: 100%;background: rgba(255,255,255,.95); border:none; box-shadow: 3px 3px 3px rgba(0,0,0,.2)}
+#menu > .table-cell > .menu-container > .row .btn-rounded > h5{ color:#ba1725; font-size: .85em; font-weight: 700; text-align: center; margin:0;margin-top:10px;}
 #menu > .table-cell > .menu-container > .row .btn-rounded > .fa{font-size: 2em;}
 
 /*---------------------------------
             TOP MENU
 ---------------------------------*/
-#top-menu{height: 70px;position:fixed;top:0;left:0;width:100%;z-index:2; background: #00adef; border:none; padding-top:20px}
+#top-menu{height: 70px;position:fixed;top:0;left:0;width:100%;z-index:2; background: #ba1725; border:none; padding-top:20px}
 #top-menu .navbar-header{height: 50px;}
 #top-menu .navbar-brand{color:#eee;border:none!important;box-shadow: none!important;background-color: transparent!important;border-radius: 0!important;}
-#top-menu .navbar-brand.focus{background: #fff!important; color:#2196f3!important}
+#top-menu .navbar-brand.focus{background: #fff!important; color:#ba1725!important}
 #top-menu .menu-center{display: inline-block;margin:0;}
 
 /*---------------------------------
@@ -37,14 +37,14 @@ body {background: #efefef;padding-top:20px;}
               ARTICLE
 ---------------------------------*/
 .article{position:relative;}
-.article > .high{position: absolute; top: 45px; left: 5%; background: #00adef; color: #fff; padding: 6px 9px; font-size: .7em; text-transform: uppercase; font-weight: 700;}
+.article > .high{position: absolute; top: 45px; left: 5%; background: #ba1725; color: #fff; padding: 6px 9px; font-size: .7em; text-transform: uppercase; font-weight: 700;}
 .article > .img{height: 90px;overflow: hidden;background-size: 100% auto; background-position: center center;}
 .article > .text{width:90%; padding: 10px; position: relative; background: #efefef;margin:-15px auto 0 auto}
-.article > .text > .title{margin: 0; color: #00adef; font-size: 1.3em; font-weight: 700;}
+.article > .text > .title{margin: 0; color: #ba1725; font-size: 1.3em; font-weight: 700;}
 .article > .text > .data{color:#999;}
 .img{height: 150px;overflow: hidden;background-size: 100% auto; background-position: center center;}
 
-.single-title{ color: #00adef; font-size: 1.6em; font-weight: 700;}
+.single-title{ color: #ba1725; font-size: 1.6em; font-weight: 700;}
 .img{height: 90px;overflow: hidden;background-size: cover; background-position: center center;}
 
 
@@ -53,7 +53,7 @@ body {background: #efefef;padding-top:20px;}
             MEDIA QUERY
 ---------------------------------*/
 @media screen and (min-width: 0px) and (max-width: 320px) {
-    #menu > .table-cell > .menu-container > .row .btn-rounded{color:#fff;width:80px; height: 80px;padding:1em;color:#00adef; border-radius: 100%;background: rgba(255,255,255,.8)}
+    #menu > .table-cell > .menu-container > .row .btn-rounded{color:#fff;width:80px; height: 80px;padding:1em;color:#ba1725; border-radius: 100%;background: rgba(255,255,255,.8)}
     #menu > .table-cell > .menu-container > .row .btn-rounded > h5{ font-size: .75em;}
     #menu > .table-cell > .menu-container > .row .btn-rounded > .fa{font-size: 1.5em;}
     #top-menu .navbar-brand{padding-left:12px; padding-right: 12px;}

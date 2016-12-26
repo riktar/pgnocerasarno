@@ -54,6 +54,15 @@ var router = {
                     switchMenu('gmg');
                     $('#menu').removeClass('visibile');
                     break;
+                
+                case 'wakeup' :
+                    if (modState === true)
+                        history.pushState(myRule, null, '#!wakeup');
+                    $("#container-all-section").data("params", myRule);
+                    $("#container-all-section").load('page-wakeup.html');
+                    switchMenu('vangelo');
+                    $('#menu').removeClass('visibile');
+                    break;
 
                 case 'single' :
                     if (modState === true)
