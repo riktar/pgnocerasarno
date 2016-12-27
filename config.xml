@@ -28,7 +28,7 @@ and open the template in the editor.
     <plugin name="cordova-plugin-file-transfer"/>
     <plugin name="cordova-plugin-camera"/>
     <plugin name="cordova-plugin-media"/>
-    
+
     <platform name="ios">
         <!-- iOS 8.0+ -->
         <!-- iPhone 6 Plus  -->
