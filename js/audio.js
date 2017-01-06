@@ -16,6 +16,9 @@ var duration = 0;
 // Play audio
 //
 function playAudio(src) {
+    if(my_media){
+        return false;
+    }
     // Create Media object from src
     my_media = new Media(src, onSuccess, onError);
     // Play audio
@@ -59,6 +62,7 @@ function stopAudio() {
     }
     clearInterval(mediaTimer);
     mediaTimer = null;
+    my_media = null;
 }
 
 // onSuccess Callback
