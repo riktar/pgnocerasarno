@@ -103,7 +103,7 @@ $(function () {
             dataType: 'json',
             success: function (data) {
                 if (data.result) {
-                    alert("Messaggio inviato con successo! Sarai ricontattato al pi� presto!");
+                    alert("Messaggio inviato con successo! Sarai ricontattato al piu' presto!");
                 } else {
                     alert(data.error);
                 }
